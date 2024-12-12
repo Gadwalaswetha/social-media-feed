@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./styles.css";
 
 const App = () => {
   const [isContactOpen, setContactOpen] = useState(false);
@@ -13,6 +13,7 @@ const App = () => {
       {/* Live Scrolling Lines at the Top */}
       {/* Top Bar with Buttons */}
       <div className="top-bar">
+        <input type="text" placeholder="Search" class="search"></input>
         <button className="top-btn">Search</button>
         <button className="top-btn" onClick={toggleContact}>
           Contact
@@ -89,10 +90,13 @@ const App = () => {
           alt="Profile"
         />
         <img
-            src="https://www.igotskills.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Figs-assets%2Fuser%2Fprofile-photos%2F2_91Trg5LUwAdUT5AiqFvu8E0Lj.png&w=1920&q=75"
-            class="image1"
-          />
-          <img src="https://www.igotskills.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Figs-assets%2Fuser%2Fprofile-photos%2F2_lcfBRjq94DKxlLEnWE6kcL1Qw.png&w=1920&q=75" class="image1"/>
+          src="https://www.igotskills.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Figs-assets%2Fuser%2Fprofile-photos%2F2_91Trg5LUwAdUT5AiqFvu8E0Lj.png&w=1920&q=75"
+          class="image1"
+        />
+        <img
+          src="https://www.igotskills.in/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Figs-assets%2Fuser%2Fprofile-photos%2F2_lcfBRjq94DKxlLEnWE6kcL1Qw.png&w=1920&q=75"
+          class="image1"
+        />
         <div>
           <h1>
             Build an Engaging Social <br />
@@ -136,3 +140,4 @@ const App = () => {
 };
 
 export default App;
+
